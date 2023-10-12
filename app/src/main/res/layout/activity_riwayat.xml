@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Riwayat">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Sewa Kembali"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/promoCardView2"
+                    android:layout_width="354dp"
+                    android:layout_height="171dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="169dp"
+                        android:background="#FFFFFF">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/promoImageView2"
+                            android:layout_width="107dp"
+                            android:layout_height="107dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sandra"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Footsal"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/promoImageView2" />
+
+                        <TextView
+                            android:id="@+id/promoTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Sandra "
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Mendatang"
+                            android:textColor="#1FAF38"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.977"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="28 September 2023"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.087"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView2"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle3" />
+
+                        <TextView
+                            android:id="@+id/promoTitle6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="08.00 - 09.00 (1 jam)"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.094"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView2"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle5" />
+
+                        <TextView
+                            android:id="@+id/promoTitle7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="76dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Rp.50.000 "
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.981"
+                            app:layout_constraintStart_toEndOf="@+id/promoTitle2"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle4" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/promoCardView3"
+                    android:layout_width="354dp"
+                    android:layout_height="171dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="169dp"
+                        android:background="#FFFFFF">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/promoImageView3"
+                            android:layout_width="107dp"
+                            android:layout_height="107dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gor_rama"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Footsal"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/promoImageView3" />
+
+                        <TextView
+                            android:id="@+id/promoTitle11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Rama"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Dibatalkan"
+                            android:textColor="#A54378"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.977"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="28 September 2023"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.087"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView3"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle12" />
+
+                        <TextView
+                            android:id="@+id/promoTitle14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="08.00 - 09.00 (1 jam)"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.094"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView3"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle13" />
+
+                        <TextView
+                            android:id="@+id/promoTitle15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="76dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Rp.50.000"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.981"
+                            app:layout_constraintStart_toEndOf="@+id/promoTitle10"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle12" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/promoCardView4"
+                    android:layout_width="354dp"
+                    android:layout_height="171dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="169dp"
+                        android:background="#FFFFFF">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/promoImageView4"
+                            android:layout_width="107dp"
+                            android:layout_height="107dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gor_ratu_jaya"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Badminton"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/promoImageView4" />
+
+                        <TextView
+                            android:id="@+id/promoTitle17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Ratu Jaya"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Selesai"
+                            android:textColor="#0C356A"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.977"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="18 September 2023"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.087"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle18" />
+
+                        <TextView
+                            android:id="@+id/promoTitle20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="07.00 - 09.00 (2 jam)"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.094"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle19" />
+
+                        <TextView
+                            android:id="@+id/promoTitle21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="76dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Rp.110.000"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.981"
+                            app:layout_constraintStart_toEndOf="@+id/promoTitle16"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle18" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/promoCardView5"
+                    android:layout_width="354dp"
+                    android:layout_height="171dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="169dp"
+                        android:background="#FFFFFF">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/promoImageView5"
+                            android:layout_width="107dp"
+                            android:layout_height="107dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sandra"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Footsal"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/promoImageView5" />
+
+                        <TextView
+                            android:id="@+id/promoTitle23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Sandra"
+                            android:textColor="#0C356A"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.108"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Selesai"
+                            android:textColor="#0C356A"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.977"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/promoTitle25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="10 September 2023"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.087"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle24" />
+
+                        <TextView
+                            android:id="@+id/promoTitle26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="08.00 - 09.00 (1 jam)"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.094"
+                            app:layout_constraintStart_toEndOf="@+id/promoImageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle25" />
+
+                        <TextView
+                            android:id="@+id/promoTitle27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="76dp"
+                            android:background="#FFFFFF"
+                            android:padding="8dp"
+                            android:text="Rp.50.000"
+                            android:textColor="#0C356A"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.981"
+                            app:layout_constraintStart_toEndOf="@+id/promoTitle22"
+                            app:layout_constraintTop_toBottomOf="@+id/promoTitle24" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
