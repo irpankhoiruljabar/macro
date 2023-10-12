@@ -21,11 +21,11 @@ class LupaPW : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
             R.id.Simpan -> {
-                var Pencet1 = Intent(this@LupaPW,MainActivity::class.java)
+                var Pencet1 = Intent(this@LupaPW,Login::class.java)
                 startActivity(Pencet1)
             }
             R.id.Gambar -> {
-                var Pemcet2 = Intent(this@LupaPW,MainActivity::class.java)
+                var Pemcet2 = Intent(this@LupaPW,Login::class.java)
                 startActivity(Pemcet2)
 
             }            }

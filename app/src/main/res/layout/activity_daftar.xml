@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Daftar">
+    tools:context=".Daftar"
+    android:background="#FFFFFF">
 
     <ImageView
         android:id="@+id/Gambar"
@@ -51,6 +52,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/oval"
         android:hint="Masukan Nama"
+        android:paddingStart="20dp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -60,6 +62,7 @@
         android:id="@+id/InputNomor"
         android:layout_width="294dp"
         android:layout_height="50dp"
+        android:paddingStart="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/oval"
         android:hint="Masukan Nomor"
@@ -72,6 +75,7 @@
         android:id="@+id/InputEmail"
         android:layout_width="294dp"
         android:layout_height="50dp"
+        android:paddingStart="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/oval"
         android:hint="Masukan Email"
@@ -85,6 +89,7 @@
         android:layout_width="294dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
         android:background="@drawable/oval"
         android:hint="Masukan Username"
         android:textColorHint="@color/white"
@@ -96,6 +101,7 @@
         android:id="@+id/InputPassword"
         android:layout_width="294dp"
         android:layout_height="50dp"
+        android:paddingStart="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/oval"
         android:hint="Masukan Password"
@@ -111,6 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/biru2"
+        android:textColor="@color/white"
         android:text="Daftar"
         android:textSize="15sp"
         android:textStyle="bold"

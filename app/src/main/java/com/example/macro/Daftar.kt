@@ -17,7 +17,7 @@ class Daftar : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.BtnSimpan -> {
-                var Pencet = Intent(this@Daftar, MainActivity::class.java)
+                var Pencet = Intent(this@Daftar, Login::class.java)
                 startActivity(Pencet)
             }
         }

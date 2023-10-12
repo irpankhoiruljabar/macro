@@ -14,6 +14,7 @@ class Login : AppCompatActivity(), View.OnClickListener {
         var Klik: Button = findViewById(R.id.BtnDaftar)
         Klik.setOnClickListener(this)
         var Klikm: Button = findViewById(R.id.BtnMasuk)
+        Klikm.setOnClickListener(this)
         var Klik2:Button = findViewById(R.id.BtnLupaPW)
         Klik2.setOnClickListener(this)
     }
@@ -24,8 +25,8 @@ class Login : AppCompatActivity(), View.OnClickListener {
                 var Pencet = Intent(this@Login, Daftar::class.java)
                 startActivity(Pencet)
             }
-            R.id.BtnDaftar -> {
-                var Pencet2 = Intent(this@Login, Daftar::class.java)
+            R.id.BtnLupaPW -> {
+                var Pencet2 = Intent(this@Login, LupaPW::class.java)
                 startActivity(Pencet2)
             }
 

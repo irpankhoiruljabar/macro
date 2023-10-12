@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LupaPW">
+    tools:context=".LupaPW"
+    android:background="#FFFFFF">
     <ImageView
         android:id="@+id/Gambar"
         android:layout_width="wrap_content"
@@ -45,6 +46,7 @@
         android:id="@+id/Inputemail"
         android:layout_width="294dp"
         android:layout_height="50dp"
+        android:paddingStart="20dp"
         android:background="@drawable/oval"
         android:hint="Masukan Password"
         android:textColorHint="@color/white"
@@ -58,6 +60,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/oval"
+        android:paddingStart="20dp"
         android:hint="Masukan Password"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +74,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/oval"
         android:hint="Masukan Password"
+        android:paddingStart="20dp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -83,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/biru2"
+        android:textColor="@color/white"
         android:text="Simpan"
         android:textSize="15sp"
         android:textStyle="bold"
