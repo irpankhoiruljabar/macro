@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_name">
+        <item>Sandra Futsal Center</item>
+        <item>Gor Rama</item>
+        <item>Gor Ratu Jaya</item>
+        <item>Quadrant Futsal</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/sandra</item>
+        <item>@drawable/gor_rama</item>
+        <item>@drawable/ratujaya</item>
+        <item>@drawable/tarunafutsal</item>
+    </integer-array>
+</resources>
