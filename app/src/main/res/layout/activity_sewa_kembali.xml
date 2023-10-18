@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".YourActivity">
+    android:id="@+id/sewakembali"
+    tools:context=".SewaKembali">
 
 
     <HorizontalScrollView
@@ -22,6 +23,7 @@
 
 
             <LinearLayout
+                android:id="@+id/quadran"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -42,7 +44,8 @@
                     android:text="Footsal"
                     android:textSize="16sp"
                     android:textColor="#0C356A"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                   />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -50,7 +53,7 @@
                     android:layout_gravity="center"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
-                    android:text="Sandara"
+                    android:text="Quadrant"
                     android:textColor="#0C356A"
                     android:textSize="12sp" />
             </LinearLayout>
