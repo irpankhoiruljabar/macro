@@ -110,7 +110,7 @@
                             android:background="#FFFFFF"
                             android:padding="8dp"
                             android:text="Mendatang"
-                            android:textColor="#1FAF38"
+                            android:textColor="@color/greenash"
                             android:textSize="16sp"
                             android:textStyle="bold|italic"
                             app:layout_constraintEnd_toEndOf="parent"

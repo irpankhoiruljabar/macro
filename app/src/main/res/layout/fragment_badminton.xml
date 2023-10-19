@@ -12,6 +12,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:clickable="true"
         android:src="@drawable/ic_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Terdekat"
-        android:backgroundTint="@color/bluedope"
+        android:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +36,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/bluedope"
         android:text="Harga"
+        android:onClick="keHarga"
         android:layout_marginStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -50,6 +52,7 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/bluedope"
         android:text="Top Booked"
+        android:onClick="keTop"
         android:layout_marginStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -62,57 +65,9 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/sandra" />
-
-        <Space
-            android:layout_width="12dp"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lap_Sandra"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLength="100"
-                android:text="@string/almt_Sandra"
-                android:textSize="15sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="6dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLength="100"
-                android:text="@string/jarak_sandra"
-                android:textSize="13sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:padding="12dp"
-        app:layout_constraintStart_toStartOf="@+id/bt_terdekat"
-        app:layout_constraintTop_toBottomOf="@+id/bt_terdekat">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Gambar"
+        app:layout_constraintTop_toBottomOf="@+id/bt_harga">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="100dp"
@@ -135,7 +90,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -157,11 +111,64 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Gambar"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gor_hasan" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_hasan"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:text="@string/almt_hasan"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:text="@string/jarak_hasan"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Gambar"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -184,7 +191,6 @@
                 android:text="@string/lap_ratu"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -212,12 +218,14 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Gambar"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/quadrant" />
+            android:src="@drawable/prima_badminton" />
 
         <Space
             android:layout_width="12dp"
@@ -231,16 +239,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lap_quadrant"
+                android:text="@string/lap_prima"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLength="100"
-                android:text="@string/almt_quadrant"
+                android:text="@string/almt_prima"
                 android:textSize="15sp" />
 
             <Space
@@ -251,7 +258,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLength="100"
-                android:text="@string/jarak_quadrant"
+                android:text="@string/jarak_prima"
                 android:textSize="13sp" />
         </LinearLayout>
     </LinearLayout>
@@ -262,12 +269,14 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Gambar"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/tarunafutsal" />
+            android:src="@drawable/gor_tirta_sari" />
 
         <Space
             android:layout_width="12dp"
@@ -284,7 +293,6 @@
                 android:text="@string/lap_PopKaFC"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -304,7 +312,7 @@
                 android:text="@string/jarak_popkfc"
                 android:textSize="13sp" />
         </LinearLayout>
-
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

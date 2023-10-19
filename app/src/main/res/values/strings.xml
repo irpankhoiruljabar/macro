@@ -43,4 +43,14 @@
     <string name="lap_PopKaFC">Pop Ka FC</string>
     <string name="almt_popkfc">Banjar Wangi, Kec. Ciawi, Kabupaten Depok, Jawa Barat 16720</string>
     <string name="jarak_popkfc">4 km</string>
+
+
+    <string name="lap_hasan">Gor hasan Djojo</string>
+    <string name="almt_hasan">Jl. Kp. Mulyasari, RT.04/RW.03, Bojongkerta, Kec. Depok Sel., Kota Depok, Jawa Barat</string>
+    <string name="jarak_hasan">1,4 km</string>
+    
+    <string name="lap_prima">Prima Badminton</string>
+    <string name="almt_prima">Banjar Waru, Kec. Ciawi, Kabupaten Depok, Jawa Barat 16720</string>
+    <string name="jarak_prima">2 km</string>
+
 </resources>

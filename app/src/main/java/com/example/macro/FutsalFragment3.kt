@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,24 +19,36 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class FutsalFragment3 : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_futsal3, container, false)
+        val view : View = inflater.inflate(R.layout.fragment_futsal3, container, false)
+        val gambar = view.findViewById<ImageView>(R.id.Gambar)
+        val terdekat : Button = view.findViewById(R.id.bt_terdekat)
+        val harga : Button = view.findViewById(R.id.bt_harga)
+
+        gambar.setOnClickListener {
+            val fragmentTujuan = HomeFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragmentTujuan)
+                .commit()
+        }
+        terdekat.setOnClickListener {
+            val fragment = FutsalFragment()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fragment_container, fragment)
+            transaction?.commit()
+        }
+        harga.setOnClickListener {
+            val fragment2 = FutsalFragment2()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fragment_container, fragment2)
+            transaction?.commit()
+        }
+        return view
     }
 
     companion object {

@@ -20,30 +20,28 @@ private const val ARG_PARAM2 = "param2"
  */
 class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
-    
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val view : View = inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        val imageView = view.findViewById<ImageView>(R.id.imageView)
+        val image2 : ImageView = view.findViewById(R.id.imageView2)
 
-        val pilihfutsal : ImageView = view.findViewById(R.id.imageView)
-        pilihfutsal.setOnClickListener(View.OnClickListener {
-            val intent = Intent(requireContext(), FutsalFragment::class.java)
-            startActivity(intent)
-        })
+        imageView.setOnClickListener {
+            // Menavigasi ke FragmentTujuan ketika ImageView diklik
+            val fragmentTujuan = FutsalFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragmentTujuan)
+                .commit()
+        }
+        image2.setOnClickListener {
+            val fragmentTujuan = BadmintonFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragmentTujuan)
+                .commit()
+        }
         return view
     }
 

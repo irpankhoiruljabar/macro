@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_marginTop="110dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Gambar Profil -->
+    <ImageView
+        android:id="@+id/profileImage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoapp"
+        android:contentDescription="Profil Picture"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/namaakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carlos"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- akun -->
+    <TextView
+        android:id="@+id/aturakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan Akun     >"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- pusat bantuan -->
+    <TextView
+        android:id="@+id/bantuakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pusat Bantuan         >"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tombol Log Out -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/bluedonker"
+        android:text="Log Out"
+        android:layout_gravity="center" />
+
+</LinearLayout>
