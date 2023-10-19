@@ -6,12 +6,39 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Macro"
         tools:targetApi="31">
+        <activity
+            android:name=".PilihJam"
+            android:exported="false" />
+        <activity
+            android:name=".PesananBerhasil"
+            android:exported="false" />
+        <activity
+            android:name=".Pembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Bantuan"
+            android:exported="false" />
+        <activity
+            android:name=".akun_seting"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".lapanganlayout"
+            android:exported="false" />
+        <activity
+            android:name=".BookingLapangan"
+            android:exported="false" />
         <activity
             android:name=".Konten_Lapangan"
             android:exported="false" />
@@ -40,7 +67,7 @@
             android:name=".SewaKembali"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".LandingPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

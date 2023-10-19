@@ -1,14 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/circleImageView"
+      android:layout_width="93dp"
+      android:layout_height="102dp"
+      android:layout_marginTop="88dp"
+      android:src="@mipmap/ic_usser_round"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+
+  <TextView
+      android:id="@+id/textView19"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="User"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+  <LinearLayout
+      android:id="@+id/stng_akun"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="96dp"
+      android:layout_marginEnd="24dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/circleImageView">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="41dp"
+        android:src="@drawable/user33"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="Pengaturan Akun"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/agle"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="304dp" />
+  </LinearLayout>
+
+  <View
+      android:id="@+id/view2"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="24dp"
+      android:background="#C4C4C4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/stng_akun" />
+
+  <LinearLayout
+      android:id="@+id/stg_info"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="24dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/view2">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="41dp"
+        android:src="@drawable/info"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Pusat Bantuan"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/agle"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="304dp" />
+  </LinearLayout>
+
+  <View
+      android:id="@+id/line3"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="24dp"
+      android:background="#C4C4C4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/stg_info" />
+
+  <Button
+      android:id="@+id/logoutButton"
+      android:layout_width="293dp"
+      android:layout_height="44dp"
+      android:layout_marginTop="115dp"
+      android:backgroundTint="@color/biru2"
+      android:padding="0dp"
+      android:text="Logout"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/line3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

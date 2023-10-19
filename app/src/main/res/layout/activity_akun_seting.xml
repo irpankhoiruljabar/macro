@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".akun_seting">
+
+
+    <ImageView
+        android:id="@+id/Gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pusatbantuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="132dp"
+        android:text="Pengaturan Akun"
+        android:textColor="#1C315E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Gambar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="93dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="88dp"
+        android:src="@mipmap/ic_usser_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="155dp"
+
+        android:src="@drawable/tambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView2">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:src="@drawable/user33"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Username...."
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="123dp"
+            android:src="@drawable/pen"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:src="@drawable/email"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:hint="Email...."
+            android:background="@color/white"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/pen"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear4" />
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line4">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:src="@drawable/tlp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:hint="No Telepon...."
+            android:background="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="112dp"
+            android:src="@drawable/pen"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear5" />
+
+    <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line5">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:src="@drawable/key"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Password...."
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/pen"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="304dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear6" />
+
+    <Button
+        android:id="@+id/Btnsimpan"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/biru2"
+        android:padding="0dp"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

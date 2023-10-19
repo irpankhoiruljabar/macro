@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home -> HomeFragment()
                 R.id.navigation_history -> HistoryFragment()
                 R.id.navigation_profile -> ProfileFragment()
-                else -> HomeFragment() // Fragment default jika item tidak dikenali
+                else -> HomeFragment()
             }
 
             supportFragmentManager.beginTransaction()

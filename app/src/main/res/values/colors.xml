@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primari">#1C315E</color>
+    <color name="secondary">#7DA0CA</color>
+    <color name="red">#A54378</color>
+    <color name="blue">#2D93F1</color>
+    <color name="abuabu">#D9D9D9</color>
+    <color name="biru">#7DA0CA</color>
+    <color name="Kuning">#FBBF27</color>
+    <color name="bluedope">#7DA0CA</color>
+    <color name="bluedonker">#0C356A</color>
+    <color name="yellow">#FBE521</color>
+    <color name="green">#0EFF17</color>
+    <color name="greenash">#435334</color>
 </resources>

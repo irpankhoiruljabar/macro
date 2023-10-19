@@ -1,10 +1,13 @@
 package com.example.macro
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.LinearLayout
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +36,32 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+
+        val logout = view.findViewById<Button>(R.id.logoutButton)
+
+        logout.setOnClickListener {
+            val keluar = Intent(activity, Login::class.java)
+            startActivity(keluar)
+        }
+
+        // Temukan elemen stng_akun
+        val stngAkun = view.findViewById<LinearLayout>(R.id.stng_akun)
+        // Tambahkan klik listener untuk perpindahan halaman Akun Seting
+        stngAkun.setOnClickListener {
+            val intent = Intent(requireContext(), akun_seting::class.java)
+            startActivity(intent)
+        }
+
+        // Temukan elemen stg_info
+        val stgInfo = view.findViewById<LinearLayout>(R.id.stg_info)
+        // Tambahkan klik listener untuk perpindahan halaman Bantuan
+        stgInfo.setOnClickListener {
+            val intent = Intent(requireContext(), Bantuan::class.java)
+            startActivity(intent)
+        }
+
+        return view
     }
 
     companion object {

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,10 +40,18 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         val searech: EditText = view.findViewById(R.id.searchEditText)
+        val pilihfutsal = view.findViewById<ImageView>(R.id.imageView)
+
         searech.setOnClickListener {
             val intent = Intent(requireContext(), activity_search::class.java)
             startActivity(intent)
         }
+        pilihfutsal.setOnClickListener (View.OnClickListener {
+            val fragmentTujuan = FutsalFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragmentTujuan)
+                .commit()
+        })
 
         return view
     }
